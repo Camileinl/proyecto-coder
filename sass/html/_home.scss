@@ -1,0 +1,69 @@
+@import '../utilidades/variables';
+@import '../utilidades/mixin';
+@import '../utilidades/listas';
+
+
+header {
+    .descripcion{
+        display:none;
+    }
+    .estilo-nav{
+        background-color: $color-principal;
+        div{
+            .hamburguesa{
+                color:nth($lista-colores,3) ;
+            }
+            .estilo-nav{
+                color: nth($lista-colores,7);
+                div{
+                    ul{
+                        li{
+                            .pink-hover:hover{
+                                background-color: nth($lista-colores,3);
+                                color: nth($lista-colores, 4);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+main{
+    div{
+        div{
+            div{
+                .estilo-card{
+                    border-width: thin;
+                    border-color: nth($lista-colores,2);
+                    .imagen-c{
+                        object-fit: cover;
+                        width: 100%;
+                        height: auto;
+                    }
+                    div{
+                        .button{
+                            background-color: nth($lista-colores,3);
+                            border: $color-principal;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    div{
+        .intro{
+            background-color: $color-principal;
+            h2{
+                .intro-boton{
+                    background-color: $color-principal;
+                }
+            }
+        }
+    }
+}
+
+.brown-bg{
+    background-color: nth($list: $lista-colores, $n:2 );
+}

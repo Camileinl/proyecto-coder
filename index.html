@@ -20,12 +20,12 @@
     <header>
 
         <!-- Texto descriptivo -->
-        <div class="bg-light py-2 text-center descipcion">
+        <div class="bg-light py-2 text-center descripcion">
             <p class="mb-0">Las mejores tiendas del mundo coreano en un solo lugar.</p>
         </div>
 
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light estilo-nav">
             <div class="container">
 
                 <!-- Logo -->
@@ -34,12 +34,12 @@
                 </a>
 
                 <!-- Botón de menú hamburguesa -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <button class="navbar-toggler hamburguesa" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <!-- Elementos del navbar -->
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas offcanvas-end estilo-nav" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
                         <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Contenido</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -50,16 +50,16 @@
                                 <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="pages/kpop.html">K-pop</a>
+                                <a class="nav-link pink-hover" href="pages/kpop.html">K-pop</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="pages/skincare.html">Skincare</a>
+                                <a class="nav-link pink-hover" href="pages/skincare.html">Skincare</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="pages/comida.html">Comida</a>
+                                <a class="nav-link pink-hover" href="pages/comida.html">Comida</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="pages/acerca-de.html">Acerca de</a>
+                                <a class="nav-link pink-hover" href="pages/acerca-de.html">Acerca de</a>
                             </li>
                         </ul>
                     </div>
@@ -76,7 +76,7 @@
 
         <!-- Carrusel de la página -->
 
-        <div id="carouselExampleAutoplaying" class="carousel slide p-5" data-bs-ride="carousel">
+        <div id="carouselExampleAutoplaying" class="carousel slide p-2" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="img/carrusel/uno.png" class="d-block w-100" alt="Promoción del sitio web que dice Descubre tu nuevo lugar favorito.">
@@ -90,11 +90,11 @@
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
+                <span class="visually-hidden">Anterior</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
+                <span class="visually-hidden">Siguiente</span>
             </button>
         </div>
 
@@ -102,29 +102,29 @@
         <div class="container text-center estilo-contenido">
             <h3 class="pt-3">Recientes</h3>
             <!-- Contenido recientes -->
-            <div class="row">
+            <div class="row pb-3">
                 <!-- Contenido 1 -->
                 <div class="col-6">
-                    <div class="card h-100 d-flex flex-column">
-                        <img src="img/portada/cake-pop.png" class="card-img-top text-center" alt="Logo sitio web de Cake Pop">
+                    <div class="card h-100 estilo-card">
+                        <img src="img/portada/cake-pop.png" class="card-img-top text-center imagen-c p-3" alt="Logo sitio web de Cake Pop">
                         <div class="card-body">
-                          <h5 class="card-title">Cake Pop</h5>
-                          <p class="card-text texto-pequeño">Tienda de kpop certificada en Circle Chart.</p>
-                          <p class="card-text"><small class="text-body-secondary">Actualizado el 08 de diciembre.</small></p>
-                          <a href="https://www.cakepopundertaking.cl/" class="btn btn-primary button">Ir al sitio</a>
+                            <h5 class="card-title">Cake Pop</h5>
+                            <p class="card-text texto-pequeño">Tienda de kpop certificada en Circle Chart.</p>
+                            <p class="card-text"><small class="text-body-secondary">Actualizado el 08 de diciembre.</small></p>
+                            <a href="https://www.cakepopundertaking.cl/" class="btn btn-primary button">Ir al sitio</a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Contenido 2  -->
                 <div class="col-6">
-                    <div class="card h-100">
-                        <img src="img/portada/logo-yeppo.jpg" class="card-img-top text-center" alt="Logo sitio web de Yeppo">
+                    <div class="card h-100 estilo-card">
+                        <img src="img/portada/logo-yeppo.jpg" class="card-img-top text-center imagen-c" alt="Logo sitio web de Yeppo">
                         <div class="card-body">
-                          <h5 class="card-title">Yeppo</h5>
-                          <p class="card-text texto-pequeño">Tienda de cosméticos coreanos.</p>
-                          <p class="card-text"><small class="text-body-secondary">Actualizado el 08 de diciembre.</small></p>
-                          <a href="https://yeppo.cl/" class="btn btn-primary button">Ir al sitio</a>
+                            <h5 class="card-title">Yeppo</h5>
+                            <p class="card-text texto-pequeño">Tienda de cosméticos coreanos.</p>
+                            <p class="card-text"><small class="text-body-secondary">Actualizado el 08 de diciembre.</small></p>
+                            <a href="https://yeppo.cl/" class="btn btn-primary button">Ir al sitio</a>
                         </div>
                     </div>
                 </div>
@@ -132,10 +132,10 @@
 
             <!-- Contenedor contenido -->
             <h3 class="pt-3">Mis favoritos</h3>
-            <div class="row">     
+            <div class="row pb-5">     
                 <div class="col-6">
-                    <div class="card favs h-100">
-                        <img src="img/portada/oh-bok.png" class="card-img-top text-center p-3" alt="Logo del sitio web de Oh-bok con la palabra de oh-bok en coreano">
+                    <div class="card favs h-100 estilo-card">
+                        <img src="img/portada/oh-bok.png" class="card-img-top text-center" alt="Logo del sitio web de Oh-bok con la palabra de oh-bok en coreano">
                         <div class="card-body">
                             <h5 class="card-title">Oh-bok</h5>
                             <p class="card-text">Restobar de comida coreana</p>
@@ -148,7 +148,7 @@
                 
 
                 <div class="col-6">
-                    <div class="card favs h-100">                        
+                    <div class="card favs h-100 estilo-card">                        
                         <img src="img/portada/logo-koychi.png" class="card-img-top text-center" alt="Logo del sitio web de Oh-bok con la palabra de oh-bok en coreano">
                         <div class="card-body">
                             <h5 class="card-title">Koychi</h5>
@@ -163,10 +163,10 @@
 
 
         <!-- Información extra -->
-        <div class="accordion accordion-flush intro">
-            <div class="accordion-item">
+        <div class="accordion accordion-flush p-2">
+            <div class="accordion-item acordion intro">
                 <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    <button class="accordion-button collapsed intro-boton" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                        ¿Qué es K-STOREGUIDE?
                     </button>
                 </h2>
@@ -182,7 +182,7 @@
     </main>
 
     <!-- Pie de página -->
-    <footer class="bg-dark text-white py-4">
+    <footer class="text-white py-4 brown-bg">
         <div class="container text-center">
             <!-- Redes Sociales -->
             <div class="mb-3">

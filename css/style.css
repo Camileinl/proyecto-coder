@@ -1,0 +1,58 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* estilos generales*/
+.body-estilo {
+  background-color: #f6ede2;
+  font-family: Roboto;
+  min-height: 100vh; /* Para que ocupe toda la pantalla */
+  display: flex;
+  flex-direction: column;
+}
+
+header .descripcion {
+  display: none;
+}
+header .estilo-nav {
+  background-color: #efd7d5;
+}
+header .estilo-nav div .hamburguesa {
+  color: palevioletred;
+}
+header .estilo-nav div .estilo-nav {
+  color: rgb(179, 35, 59);
+}
+header .estilo-nav div .estilo-nav div ul li .pink-hover:hover {
+  background-color: palevioletred;
+  color: white;
+}
+
+main div div div .estilo-card {
+  border-width: thin;
+  border-color: #563008;
+}
+main div div div .estilo-card .imagen-c {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+main div div div .estilo-card div .button {
+  background-color: palevioletred;
+  border: #efd7d5;
+}
+main div .intro {
+  background-color: #efd7d5;
+}
+main div .intro h2 .intro-boton {
+  background-color: #efd7d5;
+}
+
+.brown-bg {
+  background-color: #563008;
+}
+
+/*# sourceMappingURL=style.css.map */
