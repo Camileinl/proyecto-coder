@@ -77,21 +77,5 @@ main{
 }
 
 .brown-bg{
-    background-color: nth($list: $lista-colores, $n:2 );    
-    
-    .footer-container {
-        .social-media{
-            margin-bottom: 10px;
-            text-align: center;
-            .texto-redes{
-                text-decoration: none; /* Elimina subrayado */
-                margin-right: 15px; /* Espaciado entre enlaces */                
-            }
-        }
-        .copyright{
-            text-align: center; /* Alinea texto a la derecha */
-            margin: 0;
-            flex-shrink: 0;
-        }
-    }    
+    background-color: nth($list: $lista-colores, $n:2 ); 
 }

@@ -46,29 +46,7 @@
             padding-top: 56.25%;
         }
         
-    brown-bg{
-        display: flex;
-        .footer-container {
-            display: flex; 
-            justify-content: space-between; /* Alinea elementos en extremos opuestos */
-            align-items: center; /* Alinea verticalmente en el centro */
-            flex-wrap: wrap; 
-            .social-media{
-                
-                
-                .texto-redes{
-                    text-decoration: none; /* Elimina subrayado */
-                    margin-right: 15px; /* Espaciado entre enlaces */
-                    
-                }
-            }
-            .copyright{
-                text-align: right; /* Alinea texto a la derecha */
-                margin: 0;
-                flex-shrink: 0;
-            }
-        }
-    }    
+     
 
         
     }
