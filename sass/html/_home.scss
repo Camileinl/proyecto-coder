@@ -43,10 +43,18 @@ main{
                         height: auto;
                     }
                     div{
+                        .button:active {
+                            background-color: nth($lista-colores,7);
+                            color: nth($lista-colores,4);
+                        }
+
                         .button{
                             background-color: nth($lista-colores,3);
                             border: $color-principal;
+                            transition: background-color 0.3s ease;
                         }
+
+                        
                     }
                 }
             }
@@ -54,7 +62,7 @@ main{
     }
     div{
         .intro{
-            background-color: $color-principal;
+            background-color: nth($list: $lista-colores, $n: 8);
             h2{
                 .intro-boton{
                     background-color: $color-principal;

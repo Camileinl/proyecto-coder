@@ -1,0 +1,21 @@
+@import '../utilidades/variables';
+@import '../utilidades/mixin';
+@import '../utilidades/listas';
+
+header{
+    .divisor{
+        background-color: nth($list: $lista-colores, $n: 8);
+        nav{
+            ol{
+                li{
+                    .color-divisor{
+                        text-decoration: none;
+                        color: nth($list: $lista-colores, $n: 7);
+                        
+                    }
+                }
+            }
+        }
+    }
+
+}

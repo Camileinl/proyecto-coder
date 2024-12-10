@@ -25,7 +25,7 @@
         </div>
 
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light estilo-nav">
             <div class="container">
 
                 <!-- Logo -->
@@ -34,12 +34,12 @@
                 </a>
 
                 <!-- Botón de menú hamburguesa -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <button class="navbar-toggler hamburguesa" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <!-- Elementos del navbar -->
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas offcanvas-end estilo-nav" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
                         <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Contenido</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -47,19 +47,19 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                                <a class="nav-link pink-hover" aria-current="page" href="../index.html">Inicio</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link active" href="kpop.html">K-pop</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="skincare.html">Skincare</a>
+                                <a class="nav-link pink-hover" href="skincare.html">Skincare</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="comida.html">Comida</a>
+                                <a class="nav-link pink-hover" href="comida.html">Comida</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="acerca-de.html">Acerca de</a>
+                                <a class="nav-link pink-hover" href="acerca-de.html">Acerca de</a>
                             </li>
                         </ul>
                     </div>
@@ -67,10 +67,10 @@
             </div>
         </nav>
 
-        <div style="display: flex; justify-content: center;">
-            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <div class="divisor" style="display: flex; justify-content: center;">
+            <nav class="divisor-nav pt-3" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
+                    <li class="breadcrumb-item"><a class="color-divisor" href="../index.html">Inicio</a></li>
                     <li class="breadcrumb-item active" aria-current="page">Kpop</li>
                 </ol>
             </nav>
@@ -84,11 +84,11 @@
     <main>
 
         <!-- Introducción de la página -->
-        <div class="accordion accordion-flush intro">
-            <div class="accordion-item">
+        <div class="accordion accordion-flush p-4">
+            <div class="accordion-item acordion intro">
                 <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                        <h2>K-POP</h2>
+                    <button class="accordion-button collapsed intro-boton" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        K-POP
                     </button>
                 </h2>
                 <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
@@ -108,9 +108,9 @@
             <!-- Inicio Contenido -->
             <div class="row">
                 <!-- Contenido 1 -->
-                <div class="col-6 col-md-4 col-lg-3">
-                    <div class="card h-100">
-                        <img src="../img/portada/cake-pop.png" class="card-img-top text-center" alt="Logo sitio web de Cake Pop">
+                <div class="col-6 col-md-4 col-lg-3 py-3">
+                    <div class="card h-100 estilo-card">
+                        <img src="../img/portada/cake-pop.png" class="card-img-top text-center imagen-c p-3" alt="Logo sitio web de Cake Pop">
                         <div class="card-body">
                             <h5 class="card-title">Cake Pop</h5>
                             <p class="card-text texto-pequeño">Tienda de kpop certificada en Circle Chart.</p>
@@ -120,9 +120,9 @@
                 </div>
 
                 <!-- Contenido 2 -->
-                <div class="col-6 col-md-4 col-lg-3">
-                    <div class="card h-100">
-                        <img src="../img/portada/tienda-humo.png" class="card-img-top text-center py-1" alt="Logo del sitio web de Tienda Humo ">
+                <div class="col-6 col-md-4 col-lg-3 py-3">
+                    <div class="card h-100 estilo-card">
+                        <img src="../img/portada/tienda-humo.png" class="card-img-top text-center imagen-c py-1" alt="Logo del sitio web de Tienda Humo ">
                         <div class="card-body">
                             <h5 class="card-title">Tienda Humo</h5>
                             <p class="card-text texto-pequeño">Tienda de kpop certificada en Circle Chart.</p>
@@ -132,9 +132,9 @@
                 </div>
 
                 <!-- Contenido 3 -->
-                <div class="col-6 col-md-4 col-lg-3">
-                    <div class="card h-100">
-                        <img src="../img/kpop/logo-navidad-jarpe.png" class="card-img-top text-center py-1" alt="Logo del sitio web de Jarpe Music">
+                <div class="col-6 col-md-4 col-lg-3 py-3">
+                    <div class="card h-100 estilo-card">
+                        <img src="../img/kpop/logo-navidad-jarpe.png" class="card-img-top text-center imagen-c" alt="Logo del sitio web de Jarpe Music">
                         <div class="card-body">
                             <h5 class="card-title">Jarpe</h5>
                             <p class="card-text texto-pequeño">Tienda de kpop certificada en Circle Chart.</p>
@@ -144,9 +144,9 @@
                 </div>
 
                 <!-- Contenido 4 -->
-                <div class="col-6 col-md-4 col-lg-3">
-                    <div class="card h-100">
-                        <img src="../img/kpop/logo-dico.jpg" class="card-img-top text-center py-1" alt="Logo del sitio web de Dico Kpop Store">
+                <div class="col-6 col-md-4 col-lg-3 py-3">
+                    <div class="card h-100 estilo-card">
+                        <img src="../img/kpop/logo-dico.jpg" class="card-img-top text-center imagen-c" alt="Logo del sitio web de Dico Kpop Store">
                         <div class="card-body">
                             <h5 class="card-title">Dico Kpop</h5>
                             <p class="card-text texto-pequeño">Tienda de kpop certificada en Circle Chart.</p>
@@ -159,7 +159,7 @@
     </main>
 
     <!-- Pie de página -->
-    <footer class="bg-dark text-white py-4">
+    <footer class="text-white py-4 brown-bg">
         <div class="container text-center">
         <!-- Redes Sociales -->
         <div class="mb-3">
