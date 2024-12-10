@@ -4,11 +4,13 @@
 
 
 main{
+    .intro-acerca{
+        background-color: nth($list: $lista-colores, $n: 4);
+    }
     section{
         div{
             .pink-color:active {
-                background-color: nth($lista-colores,7);
-                color: nth($lista-colores,4);
+                @include colores (nth($lista-colores,7), nth($lista-colores,4));
             }
 
             .pink-color{
@@ -18,18 +20,29 @@ main{
             }
 
             .pink-color:hover{
-                background-color: nth($lista-colores,9);
-                color: nth($lista-colores,4);
+                @include colores (nth($lista-colores,9), nth($lista-colores,4));                
             }
         }
     }
     .video-container{
-        @include video;
+        position: relative; /* Para crear un contexto para el video */
+        width: 100%; /* Ocupa todo el ancho disponible */
+        padding-top: 50%; /* Relación de aspecto 16:9 */
+        overflow: hidden; /* Evita que el contenido se desborde */  
+        margin: 10px auto; /* Margen más pequeño para móviles */
+        .video-musical{
+            @include video;            
+        }
+        
+    }
+    .estilo-title{
+        color: nth($list: $lista-colores, $n: 6);
     }
     section{
         #acerca-de{
-            background-color: $color-principal;
-            border: $color-principal solid 10px;            
+            @include colores (nth($list: $lista-colores, $n: 5), nth($list: $lista-colores, $n: 2));
+            border: nth($list: $lista-colores, $n: 5) solid 10px;
+            border-radius: 10px;            
         }
 
     }

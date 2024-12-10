@@ -9,7 +9,7 @@ main{
                 div{
                     .estilo-img{
                         @include medidas (100%, auto);
-                        object-fit: cover;
+                        object-fit: $fit;
                         display: block;
                     }
                 }

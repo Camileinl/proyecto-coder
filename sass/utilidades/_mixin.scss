@@ -4,12 +4,32 @@
     height: $height;
 }
 
+@mixin colores ($background-color, $color){
+    background-color: $background-color;
+    color: $color;
+}
+
 
 //con parámetros
-@mixin video{
+@mixin flex{
     display: flex;
     justify-content: center; /* Centra horizontalmente */
     align-items: center; /* Centra verticalmente */
-    height: 100%; /* Asegura que el contenedor tenga suficiente altura */
-    padding: 20px; /* Opcional, para añadir espacio alrededor */
+}
+
+@mixin video{
+    position: absolute; /* Posición absoluta dentro del contenedor */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ajusta el ancho al del contenedor */
+    height: 100%; /* Ajusta la altura manteniendo la relación */
+    border: none; /* Elimina bordes */
+}
+
+@mixin descripcion{
+    display: block;
+    background-color: nth($list: $lista-colores, $n: 2);
+    color: nth($list: $lista-colores, $n: 4);
+    font-size: smaller;
+    font-weight: lighter;
 }

@@ -14,14 +14,12 @@ header {
                 color:nth($lista-colores,3) ;
             }
             .estilo-nav{
-                color: nth($lista-colores,7);
-                background-color: $color-principal;
+                @include colores ($color-principal, nth($lista-colores,7));                
                 div{
                     ul{
                         li{
                             .pink-hover:hover{
-                                background-color: nth($lista-colores,3);
-                                color: nth($lista-colores, 4);
+                                @include colores (nth($lista-colores,3), nth($lista-colores,4));                                
                             }
                         }
                     }
@@ -35,32 +33,32 @@ main{
     div{
         div{
             div{
-                .estilo-card{
-                    border-width: thin;
-                    border-color: nth($lista-colores,2);
-                    .imagen-c{
-                        object-fit: cover;
-                        width: 100%;
-                        height: auto;
-                    }
-                    div{
-                        .button:active {
-                            background-color: nth($lista-colores,7);
-                            color: nth($lista-colores,4);
+                div{
+                    .estilo-card{
+                        border-width: thin;
+                        border-color: nth($lista-colores,2);
+                        .imagen-c{
+                            object-fit: $fit;
+                            @include medidas (100%, auto);                        
                         }
+                        div{
+                            .button:active {
+                                @include colores (nth($lista-colores,7),nth($lista-colores,4));
+                                transform: scale(0.98);                            
+                            }
 
-                        .button{
-                            background-color: nth($lista-colores,3);
-                            border: $color-principal;
-                            transition: background-color 0.3s ease;
+                            .button{
+                                background-color: nth($lista-colores,3);
+                                border: $color-principal;
+                                transition: background-color 0.3s ease;
+                            }
+
+                            .button:hover{
+                                @include colores (nth($lista-colores,9), nth($lista-colores,4));                            
+                            }
+
+                            
                         }
-
-                        .button:hover{
-                            background-color: nth($lista-colores,9);
-                            color: nth($lista-colores,4);
-                        }
-
-                        
                     }
                 }
             }
@@ -79,5 +77,21 @@ main{
 }
 
 .brown-bg{
-    background-color: nth($list: $lista-colores, $n:2 );
+    background-color: nth($list: $lista-colores, $n:2 );    
+    
+    .footer-container {
+        .social-media{
+            margin-bottom: 10px;
+            text-align: center;
+            .texto-redes{
+                text-decoration: none; /* Elimina subrayado */
+                margin-right: 15px; /* Espaciado entre enlaces */                
+            }
+        }
+        .copyright{
+            text-align: center; /* Alinea texto a la derecha */
+            margin: 0;
+            flex-shrink: 0;
+        }
+    }    
 }

@@ -8,7 +8,7 @@
 
 /* estilos generales*/
 .body-estilo {
-  background-color: #fcfbf9;
+  background-color: #fff5f4;
   font-family: Roboto;
   min-height: 100vh; /* Para que ocupe toda la pantalla */
   display: flex;
@@ -19,18 +19,73 @@ header .descripcion {
   display: none;
 }
 header .estilo-navbar {
-  background-color: #efd7d5;
+  background-color: #e7c9c7;
 }
 header .estilo-navbar div .hamburguesa {
   color: palevioletred;
 }
 header .estilo-navbar div .estilo-nav {
+  background-color: #e7c9c7;
   color: rgb(179, 35, 59);
-  background-color: #efd7d5;
 }
 header .estilo-navbar div .estilo-nav div ul li .pink-hover:hover {
   background-color: palevioletred;
   color: white;
+}
+
+main div div div div .estilo-card {
+  border-width: thin;
+  border-color: #563008;
+}
+main div div div div .estilo-card .imagen-c {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+main div div div div .estilo-card div .button:active {
+  background-color: rgb(179, 35, 59);
+  color: white;
+  transform: scale(0.98);
+}
+main div div div div .estilo-card div .button {
+  background-color: palevioletred;
+  border: #e7c9c7;
+  transition: background-color 0.3s ease;
+}
+main div div div div .estilo-card div .button:hover {
+  background-color: rgb(206, 91, 130);
+  color: white;
+}
+main div .intro {
+  background-color: #f3dde4;
+}
+main div .intro h2 .intro-boton {
+  background-color: #e7c9c7;
+}
+
+.brown-bg {
+  background-color: #563008;
+}
+.brown-bg .footer-container .social-media {
+  margin-bottom: 10px;
+  text-align: center;
+}
+.brown-bg .footer-container .social-media .texto-redes {
+  text-decoration: none; /* Elimina subrayado */
+  margin-right: 15px; /* Espaciado entre enlaces */
+}
+.brown-bg .footer-container .copyright {
+  text-align: center; /* Alinea texto a la derecha */
+  margin: 0;
+  flex-shrink: 0;
+}
+
+header .divisor {
+  background-color: #f3dde4;
+}
+header .divisor nav ol li .color-divisor {
+  text-decoration: none;
+  color: rgb(179, 35, 59);
 }
 
 main div div div .estilo-card {
@@ -45,33 +100,16 @@ main div div div .estilo-card .imagen-c {
 main div div div .estilo-card div .button:active {
   background-color: rgb(179, 35, 59);
   color: white;
+  transform: scale(0.98);
 }
 main div div div .estilo-card div .button {
   background-color: palevioletred;
-  border: #efd7d5;
+  border: #e7c9c7;
   transition: background-color 0.3s ease;
 }
 main div div div .estilo-card div .button:hover {
   background-color: rgb(206, 91, 130);
   color: white;
-}
-main div .intro {
-  background-color: #f3eff0;
-}
-main div .intro h2 .intro-boton {
-  background-color: #efd7d5;
-}
-
-.brown-bg {
-  background-color: #563008;
-}
-
-header .divisor {
-  background-color: #f3eff0;
-}
-header .divisor nav ol li .color-divisor {
-  text-decoration: none;
-  color: rgb(179, 35, 59);
 }
 
 main div div div div .estilo-img {
@@ -81,13 +119,16 @@ main div div div div .estilo-img {
   display: block;
 }
 
+main .intro-acerca {
+  background-color: white;
+}
 main section div .pink-color:active {
   background-color: rgb(179, 35, 59);
   color: white;
 }
 main section div .pink-color {
   background-color: palevioletred;
-  border: #efd7d5;
+  border: #e7c9c7;
   transition: background-color 0.3s ease;
 }
 main section div .pink-color:hover {
@@ -95,15 +136,116 @@ main section div .pink-color:hover {
   color: white;
 }
 main .video-container {
-  display: flex;
-  justify-content: center; /* Centra horizontalmente */
-  align-items: center; /* Centra verticalmente */
-  height: 100%; /* Asegura que el contenedor tenga suficiente altura */
-  padding: 20px; /* Opcional, para añadir espacio alrededor */
+  position: relative; /* Para crear un contexto para el video */
+  width: 100%; /* Ocupa todo el ancho disponible */
+  padding-top: 50%; /* Relación de aspecto 16:9 */
+  overflow: hidden; /* Evita que el contenido se desborde */
+  margin: 10px auto; /* Margen más pequeño para móviles */
+}
+main .video-container .video-musical {
+  position: absolute; /* Posición absoluta dentro del contenedor */
+  top: 0;
+  left: 0;
+  width: 100%; /* Ajusta el ancho al del contenedor */
+  height: 100%; /* Ajusta la altura manteniendo la relación */
+  border: none; /* Elimina bordes */
+}
+main .estilo-title {
+  color: #b68104;
 }
 main section #acerca-de {
-  background-color: #efd7d5;
-  border: #efd7d5 solid 10px;
+  background-color: #f5db9f;
+  color: #563008;
+  border: #f5db9f solid 10px;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 600px) {
+  header .descripcion {
+    display: block;
+    background-color: #563008;
+    color: white;
+    font-size: smaller;
+    font-weight: lighter;
+  }
+  main .estilo-contenedor div .estilo-row {
+    background-color: #f5db9f;
+    border-radius: 20px;
+  }
+  main .estilo-contenedor div .estilo-row .estilo-column {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    padding: 30px;
+  }
+  main .estilo-contenedor div .estilo-row .estilo-column .estilo-card {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    width: 90%;
+  }
+  main .estilo-contenedor div .estilo-row .estilo-column .estilo-card .imagen-c {
+    width: 70%;
+    height: auto;
+  }
+  main .intro-acerca {
+    background-color: #fff5f4;
+  }
+  main .formulario {
+    border: 1px solid rgb(206, 91, 130);
+  }
+  main .formulario .pink-color {
+    padding: 0;
+  }
+  main .video-container {
+    max-width: 600px;
+    margin: 15px auto;
+    padding-top: 56.25%;
+  }
+  main brown-bg {
+    display: flex;
+  }
+  main brown-bg .footer-container {
+    display: flex;
+    justify-content: space-between; /* Alinea elementos en extremos opuestos */
+    align-items: center; /* Alinea verticalmente en el centro */
+    flex-wrap: wrap;
+  }
+  main brown-bg .footer-container .social-media .texto-redes {
+    text-decoration: none; /* Elimina subrayado */
+    margin-right: 15px; /* Espaciado entre enlaces */
+  }
+  main brown-bg .footer-container .copyright {
+    text-align: right; /* Alinea texto a la derecha */
+    margin: 0;
+    flex-shrink: 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main .estilo-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  main .estilo-contenedor .contenedor {
+    flex: 1 1 48%;
+    max-width: 48%;
+    min-height: max-content;
+  }
+  main .estilo-contenedor .contenedor .estilo-row .estilo-column {
+    padding: 15px;
+  }
+  main .estilo-contenedor .contenedor .estilo-row .estilo-column .estilo-card {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    width: 100%;
+  }
+  main .video-container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding-top: 40%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

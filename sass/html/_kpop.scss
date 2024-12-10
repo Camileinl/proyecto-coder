@@ -2,6 +2,8 @@
 @import '../utilidades/mixin';
 @import '../utilidades/listas';
 
+
+
 header{
     .divisor{
         background-color: nth($list: $lista-colores, $n: 8);
@@ -18,4 +20,41 @@ header{
         }
     }
 
+}
+
+main{
+    div{
+        
+        div{
+            div{
+                .estilo-card{
+                    border-width: thin;
+                    border-color: nth($lista-colores,2);
+                    .imagen-c{
+                        object-fit: $fit;
+                        @include medidas (100%, auto);                        
+                    }
+                    div{
+                        .button:active {
+                            @include colores (nth($lista-colores,7),nth($lista-colores,4));
+                            transform: scale(0.98);                            
+                        }
+
+                        .button{
+                            background-color: nth($lista-colores,3);
+                            border: $color-principal;
+                            transition: background-color 0.3s ease;
+                        }
+
+                        .button:hover{
+                            @include colores (nth($lista-colores,9), nth($lista-colores,4));                            
+                        }
+
+                        
+                    }
+                }
+            }
+        }
+        
+    }
 }

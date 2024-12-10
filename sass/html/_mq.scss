@@ -1,0 +1,112 @@
+@import '../utilidades/variables';
+@import '../utilidades/mixin';
+@import '../utilidades/listas';
+
+//estilos tablet
+@media screen and  (min-width:600px){
+    header{
+        .descripcion{
+            @include descripcion;
+        }       
+    }
+
+    main{
+        .estilo-contenedor{
+            div{            
+                .estilo-row{
+                    background-color: nth($list: $lista-colores, $n: 5);
+                    border-radius: 20px;                
+                    .estilo-column{
+                        @include flex;
+                        padding: 30px;
+                        .estilo-card{
+                            @include flex;
+                            width: 90%;     
+                            .imagen-c{
+                                @include medidas (70%,auto);                                             
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .intro-acerca{
+            background-color: nth($list: $lista-colores, $n: 1);
+        }
+        .formulario{
+            border:1px solid nth($list: $lista-colores, $n: 9);
+            .pink-color{
+                padding: 0;
+            }
+            
+        }
+        .video-container{
+            max-width: 600px;
+            margin: 15px auto;
+            padding-top: 56.25%;
+        }
+        
+    brown-bg{
+        display: flex;
+        .footer-container {
+            display: flex; 
+            justify-content: space-between; /* Alinea elementos en extremos opuestos */
+            align-items: center; /* Alinea verticalmente en el centro */
+            flex-wrap: wrap; 
+            .social-media{
+                
+                
+                .texto-redes{
+                    text-decoration: none; /* Elimina subrayado */
+                    margin-right: 15px; /* Espaciado entre enlaces */
+                    
+                }
+            }
+            .copyright{
+                text-align: right; /* Alinea texto a la derecha */
+                margin: 0;
+                flex-shrink: 0;
+            }
+        }
+    }    
+
+        
+    }
+}
+
+
+
+//estilos desktop
+@media screen and  (min-width:1024px){
+    main{
+        .estilo-contenedor{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .contenedor{
+                flex: 1 1 48%;
+                max-width: 48%;
+                min-height: max-content;
+                .estilo-row{                                   
+                    .estilo-column{
+                        padding: 15px;
+                        .estilo-card{
+                            @include flex;
+                            width: 100%;                           
+                            
+                        }
+                    }
+                }
+            }
+        }   
+        .video-container{
+            max-width: 1000px;
+            margin: 20px auto;
+            padding-top: 40%;
+        }
+        
+              
+        
+        
+    }
+}
