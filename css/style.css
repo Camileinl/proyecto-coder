@@ -75,8 +75,5 @@ main div div div div .estilo-img {
   object-fit: cover;
   display: block;
 }
-main div div .estilo-contenido {
-  grid-template-columns: span 2;
-}
 
 /*# sourceMappingURL=style.css.map */
