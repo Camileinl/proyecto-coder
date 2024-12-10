@@ -55,6 +55,11 @@ main{
                             transition: background-color 0.3s ease;
                         }
 
+                        .button:hover{
+                            background-color: nth($lista-colores,9);
+                            color: nth($lista-colores,4);
+                        }
+
                         
                     }
                 }

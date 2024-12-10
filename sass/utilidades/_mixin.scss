@@ -1,4 +1,15 @@
+//sin parámetros
 @mixin medidas ($width, $height){
     width: $width;
     height: $height;
+}
+
+
+//con parámetros
+@mixin video{
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100%; /* Asegura que el contenedor tenga suficiente altura */
+    padding: 20px; /* Opcional, para añadir espacio alrededor */
 }

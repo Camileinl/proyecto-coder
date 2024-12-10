@@ -17,7 +17,7 @@
     <title>KSTOREGUIDE-Acerca de</title>
 </head>
 
-<body>
+<body class="body-estilo">
 
     <!-- Inicio de header -->
     <header>
@@ -28,7 +28,7 @@
         </div>
 
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light estilo-navbar">
             <div class="container">
 
                 <!-- Logo -->
@@ -37,12 +37,12 @@
                 </a>
 
                 <!-- Botón de menú hamburguesa -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <button class="navbar-toggler hamburguesa" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <!-- Elementos del navbar -->
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas offcanvas-end estilo-nav" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
                         <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Contenido</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -50,16 +50,16 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                                <a class="nav-link pink-hover" aria-current="page" href="../index.html">Inicio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="kpop.html">K-pop</a>
+                                <a class="nav-link pink-hover" href="kpop.html">K-pop</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="skincare.html">Skincare</a>
+                                <a class="nav-link pink-hover" href="skincare.html">Skincare</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="comida.html">Comida</a>
+                                <a class="nav-link pink-hover" href="comida.html">Comida</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link active" href="acerca-de.html">Acerca de</a>
@@ -70,10 +70,10 @@
             </div>
         </nav>
 
-        <div style="display: flex; justify-content: center;">
-            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <div class="divisor" style="display: flex; justify-content: center;">
+            <nav class="divisor-nav pt-3" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
+                    <li class="breadcrumb-item"><a class="color-divisor" href="../index.html">Inicio</a></li>
                     <li class="breadcrumb-item active" aria-current="page">Acerca de</li>
                 </ol>
             </nav>
@@ -86,26 +86,8 @@
     <main>
 
         <!-- Introducción de la página -->
-        <section class="container intro">
-            <h1 class="text-center">Acerca de</h1>
+        <section class="container intro p-5">
             <P>K-STOREGUIDE nació como idea de un proyecto de desarrollo web y con la intención de hacer más cnocidas mis cosas favoritas del mundo coreano en Chile.</P>
-        </section>
-
-        <section class="video-container text-center">
-            <!-- Video musical recomendado -->
-            <iframe 
-                width="400" 
-                height="auto" 
-                src="https://www.youtube.com/embed/REpZEEpjMlc" 
-                title="YouTube video player" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen>
-            </iframe>
-        </section> 
-        
-        <section class="container p-3" id="acerca-de">
-            <p>Siempre que tengo la oportunidad me gusta culturizar a las personas con mis grupos favoritos, te dejo de recomendación la canción principal del último álbum de mis artistas favoritos. ¡Espero lo disfrutes!</p>
         </section>
 
         <section class="form container p-4">
@@ -117,11 +99,34 @@
                 <label for="floatingTextarea2">Comenta</label>
             </div>
 
-            <div class="d-grid gap-2">
+            <div class="d-grid gap-2 pb-5 pt-3">
                 <button class="btn btn-primary pink-color" type="button">Enviar</button>
             </div>
 
         </section>
+
+        <div>
+            <h3 class="text-center">Recomendación Musical</h3>
+        </div>
+
+        <section class="video-container">
+            <!-- Video musical recomendado -->
+            <iframe 
+                width="100%" 
+                height="auto" 
+                src="https://www.youtube.com/embed/REpZEEpjMlc" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </section> 
+        
+        <section class="container p-4">
+            <p id="acerca-de">Siempre que tengo la oportunidad me gusta culturizar a las personas con mis grupos favoritos, te dejo de recomendación la canción principal del último álbum de mis artistas favoritos. ¡Espero lo disfrutes!</p>
+        </section>
+
+        
 
         
 
@@ -129,7 +134,7 @@
     </main>
 
     <!-- Pie de página -->
-    <footer class="bg-dark text-white py-4">
+    <footer class="brown-bg text-white py-4">
         <div class="container text-center">
         <!-- Redes Sociales -->
         <div class="mb-3">
