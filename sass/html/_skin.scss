@@ -1,0 +1,22 @@
+@import '../utilidades/variables';
+@import '../utilidades/mixin';
+@import '../utilidades/listas';
+
+main{
+    div{
+        div{
+            div{
+                div{
+                    .estilo-img{
+                        @include medidas (100%, auto);
+                        object-fit: cover;
+                        display: block;
+                    }
+                }
+            }
+            .estilo-contenido{
+                grid-template-columns: span 2;
+            }
+        }
+    }
+}

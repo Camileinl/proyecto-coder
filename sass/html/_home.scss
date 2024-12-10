@@ -7,7 +7,7 @@ header {
     .descripcion{
         display:none;
     }
-    .estilo-nav{
+    .estilo-navbar{
         background-color: $color-principal;
         div{
             .hamburguesa{
@@ -15,6 +15,7 @@ header {
             }
             .estilo-nav{
                 color: nth($lista-colores,7);
+                background-color: $color-principal;
                 div{
                     ul{
                         li{

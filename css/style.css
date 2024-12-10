@@ -7,7 +7,7 @@
 
 /* estilos generales*/
 .body-estilo {
-  background-color: #f6ede2;
+  background-color: #f7f5f2;
   font-family: Roboto;
   min-height: 100vh; /* Para que ocupe toda la pantalla */
   display: flex;
@@ -17,16 +17,17 @@
 header .descripcion {
   display: none;
 }
-header .estilo-nav {
+header .estilo-navbar {
   background-color: #efd7d5;
 }
-header .estilo-nav div .hamburguesa {
+header .estilo-navbar div .hamburguesa {
   color: palevioletred;
 }
-header .estilo-nav div .estilo-nav {
+header .estilo-navbar div .estilo-nav {
   color: rgb(179, 35, 59);
+  background-color: #efd7d5;
 }
-header .estilo-nav div .estilo-nav div ul li .pink-hover:hover {
+header .estilo-navbar div .estilo-nav div ul li .pink-hover:hover {
   background-color: palevioletred;
   color: white;
 }
@@ -66,6 +67,16 @@ header .divisor {
 header .divisor nav ol li .color-divisor {
   text-decoration: none;
   color: rgb(179, 35, 59);
+}
+
+main div div div div .estilo-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+main div div .estilo-contenido {
+  grid-template-columns: span 2;
 }
 
 /*# sourceMappingURL=style.css.map */
